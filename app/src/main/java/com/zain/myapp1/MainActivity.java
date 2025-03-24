@@ -68,6 +68,7 @@ public class MainActivity extends AppCompatActivity {
                 intent.putExtra("email", email);
                 intent.putExtra("password", password);
                 startActivity(intent);
+                finish();
             }
         });
         loginText.setOnClickListener(new View.OnClickListener() {
