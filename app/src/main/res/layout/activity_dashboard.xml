@@ -137,12 +137,12 @@
             android:textStyle="bold" />
 
         <Button
-            android:id="@+id/tasks_button"
+            android:id="@+id/frag_button"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="12dp"
             android:backgroundTint="#E74C3C"
-            android:text="My Tasks"
+            android:text="My Fragments"
             android:textAllCaps="false"
             android:textSize="16sp"
             android:textStyle="bold" />

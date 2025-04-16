@@ -1,5 +1,6 @@
 package com.zain.myapp1;
 
+import android.app.AlertDialog;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -78,8 +79,9 @@ public class LOGIN extends AppCompatActivity {
         });
 
         signupText.setOnClickListener(v -> {
-            Intent intent1 = new Intent(LOGIN.this, MainActivity.class);
-            startActivity(intent1);
+            //Intent intent1 = new Intent(LOGIN.this, MainActivity.class);
+           // startActivity(intent1);
+            showSignInDialog();
             finish();
         });
 
@@ -88,5 +90,12 @@ public class LOGIN extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
+    }
+    private void showSignInDialog() {
+        AlertDialog.Builder builder = new AlertDialog.Builder(this);
+        builder.setTitle("Sign In")
+                .setMessage("You have clicked Sign In!")
+                .setPositiveButton("OK", (dialog, which) -> dialog.dismiss())
+                .show();
     }
 }
