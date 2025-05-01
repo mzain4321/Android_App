@@ -131,7 +131,7 @@
             android:layout_height="wrap_content"
             android:layout_marginBottom="12dp"
             android:backgroundTint="#3498DB"
-            android:text="My Projects"
+            android:text="My music"
             android:textAllCaps="false"
             android:textSize="16sp"
             android:textStyle="bold" />

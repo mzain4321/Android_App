@@ -79,9 +79,9 @@ public class LOGIN extends AppCompatActivity {
         });
 
         signupText.setOnClickListener(v -> {
-            //Intent intent1 = new Intent(LOGIN.this, MainActivity.class);
-           // startActivity(intent1);
-            showSignInDialog();
+          Intent intent1 = new Intent(LOGIN.this, MainActivity.class);
+           startActivity(intent1);
+           // showSignInDialog();
             finish();
         });
 

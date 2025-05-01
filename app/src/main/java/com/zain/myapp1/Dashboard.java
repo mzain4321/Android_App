@@ -52,6 +52,13 @@ public class Dashboard extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+        projectsButton.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Dashboard.this, Media_page.class);
+                startActivity(intent);
+            }
+        });
         logoutButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
