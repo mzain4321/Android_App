@@ -105,7 +105,7 @@ public class LOGIN extends AppCompatActivity {
                                                 Toast.makeText(LOGIN.this, "Sign in success", Toast.LENGTH_SHORT).show();
 
                                                 Intent intent = new Intent(LOGIN.this, Dashboard.class);
-                                                intent.putExtra("username", username);  // Pass the username
+                                                intent.putExtra("username", username);
                                                 startActivity(intent);
                                                 finish();
                                             } else {
