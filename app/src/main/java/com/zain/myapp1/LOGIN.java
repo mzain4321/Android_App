@@ -109,7 +109,8 @@ public class LOGIN extends AppCompatActivity {
                                                 startActivity(intent);
                                                 finish();
                                             } else {
-                                                Toast.makeText(LOGIN.this, "User data not found", Toast.LENGTH_SHORT).show();
+                                                    Toast.makeText(LOGIN.this, "User data not found", Toast.LENGTH_SHORT).show();
+
                                             }
                                         })
                                         .addOnFailureListener(e -> {
@@ -158,7 +159,7 @@ public class LOGIN extends AppCompatActivity {
                 //                    Toast.makeText(LOGIN.this, "Incorrect password!", Toast.LENGTH_SHORT).show();
                   //              }
                     //        } else {
-                      //          Toast.makeText(LOGIN.this, "Email not found!", Toast.LENGTH_SHORT).show();
+                      //          Toast.makeText(LOGIN.this, "Emai not found!", Toast.LENGTH_SHORT).show();
                         //    }
                         //})
                         //.addOnFailureListener(e -> {
@@ -170,7 +171,6 @@ public class LOGIN extends AppCompatActivity {
         signupText.setOnClickListener(v -> {
           Intent intent1 = new Intent(LOGIN.this, MainActivity.class);
            startActivity(intent1);
-           // showSignInDialog();
             finish();
         });
 
@@ -180,11 +180,5 @@ public class LOGIN extends AppCompatActivity {
             return insets;
         });
     }
-    private void showSignInDialog() {
-        AlertDialog.Builder builder = new AlertDialog.Builder(this);
-        builder.setTitle("Sign In")
-                .setMessage("You have clicked Sign In!")
-                .setPositiveButton("OK", (dialog, which) -> dialog.dismiss())
-                .show();
-    }
+
 }
