@@ -110,7 +110,6 @@ public class LOGIN extends AppCompatActivity {
                                                 finish();
                                             } else {
                                                     Toast.makeText(LOGIN.this, "User data not found", Toast.LENGTH_SHORT).show();
-
                                             }
                                         })
                                         .addOnFailureListener(e -> {
@@ -138,7 +137,7 @@ public class LOGIN extends AppCompatActivity {
                    // return;
                 //}
 
-                // Check user in Firestor
+                // Check user in Firestore
                 // //   db.collection("users")
                 //
                 //       .whereEqualTo("email", enteredEmail)

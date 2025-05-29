@@ -52,6 +52,13 @@ public class Dashboard extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+        settingsButton.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Dashboard.this, sqlliote.class);
+                startActivity(intent);
+            }
+        });
         projectsButton.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v) {
