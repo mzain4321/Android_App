@@ -17,7 +17,7 @@ public class Dashboard extends AppCompatActivity {
     private TextView welcomeText;
     private ListView recentList;
     private Button logoutButton;
-    private Button projectsButton, fragButton, calculatorButton, settingsButton;
+    private Button projectsButton, fragButton, calculatorButton, sqlliteButton ,shrePrefButton ,sqlCrud,RecycleView, fireBaseCrud,otp;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -25,12 +25,16 @@ public class Dashboard extends AppCompatActivity {
         setContentView(R.layout.activity_dashboard);
 
         welcomeText = findViewById(R.id.welcome_text);
-        recentList = findViewById(R.id.recent_list);
         logoutButton = findViewById(R.id.logout_button);
         projectsButton = findViewById(R.id.projects_button);
         fragButton = findViewById(R.id.frag_button);
         calculatorButton = findViewById(R.id.calculator_button);
-        settingsButton = findViewById(R.id.settings_button);
+        sqlliteButton = findViewById(R.id.settings_button);
+        shrePrefButton= findViewById(R.id.share_pref_button);
+        sqlCrud=findViewById(R.id.sqlcrud);
+        RecycleView=findViewById(R.id.recyclerView);
+        fireBaseCrud=findViewById(R.id.firebasecrud);
+        otp=findViewById(R.id.otp);
 
         String username = getIntent().getStringExtra("username");
         if (username == null || username.isEmpty()) {
@@ -52,10 +56,31 @@ public class Dashboard extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-        settingsButton.setOnClickListener(new View.OnClickListener(){
+        sqlliteButton.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(Dashboard.this, sqlliote.class);
+                Intent intent = new Intent(Dashboard.this, sqlsignup.class);
+                startActivity(intent);
+            }
+        });
+        shrePrefButton.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Dashboard.this, sharepref.class);
+                startActivity(intent);
+            }
+        });
+        otp.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Dashboard.this, otp.class);
+                startActivity(intent);
+            }
+        });
+        sqlCrud.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Dashboard.this, sqllite_crud.class);
                 startActivity(intent);
             }
         });
@@ -63,6 +88,20 @@ public class Dashboard extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(Dashboard.this, Media_page.class);
+                startActivity(intent);
+            }
+        });
+        RecycleView.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Dashboard.this, recyclerView.class);
+                startActivity(intent);
+            }
+        });
+        fireBaseCrud.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Dashboard.this, fireBaseCrud.class);
                 startActivity(intent);
             }
         });

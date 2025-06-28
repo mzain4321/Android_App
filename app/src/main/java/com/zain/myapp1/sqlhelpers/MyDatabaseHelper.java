@@ -1,4 +1,4 @@
-package com.zain.myapp1;
+package com.zain.myapp1.sqlhelpers;
 
 import android.content.ContentValues;
 import android.content.Context;

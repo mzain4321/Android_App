@@ -12,6 +12,8 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
+import com.zain.myapp1.sqlhelpers.MyDatabaseHelper;
+
 public class sqlsignup extends AppCompatActivity {
     EditText usernameInput, passwordInput;
     Button loginButton, signupButton;

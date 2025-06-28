@@ -13,6 +13,21 @@
         android:theme="@style/Theme.MyApp1"
         tools:targetApi="31">
         <activity
+            android:name=".fireBaseCrud"
+            android:exported="false" />
+        <activity
+            android:name=".recyclerView"
+            android:exported="false" />
+        <activity
+            android:name=".sqllite_crud"
+            android:exported="false" />
+        <activity
+            android:name=".sharepref"
+            android:exported="false" />
+        <activity
+            android:name=".otp"
+            android:exported="false" />
+        <activity
             android:name=".sqlliote"
             android:exported="false" />
         <activity
